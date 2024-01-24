@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    position: relative;
+}
+:root{
+    --swiper-theme-color: #000000;
+
+}
+
+.navbar{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding:0 25px;
+    padding: 20px 50px;
+    margin-bottom:20px ;
+    position: fixed;
+    background: #ffffff;
+    z-index: 100;
+}
+.active{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.logo img{
+    width: 150px;
+    height: 35px;
+    position: relative;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.menu-btn{
+    display: none;
+}
+.navbar ul li{
+    padding: 10px;
+}
+.navbar ul li a{
+    color: black;
+}
+.wrapper {
+
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heading h1{
+    font-size: 40px;
+
+}
+.sub-heading{
+    font-size: large;
+    font-weight: 400;
+}
+.sub-heading::before{
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #3d86e0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:10px ;
+}
+.heading h4{
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+.col-2 img{
+    width: 600px;
+    height: 400px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 .card{
+    display: grid;
+
+    text-align: center;
+    height: 300px;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.col-3 .card:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+.card .card-heading h4{
+    font-size: 30px;
+    font-weight: 500;
+}
+.material-symbols-outlined.md-48{
+    font-size: 40px;
+}
+.wave{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.about-sec{
+    position: relative;
+    background: #000;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    margin: 20px;
+    color:#fff;
+}
+.about p{
+    font-weight: 200;
+}
+.about .rank-sec{
+    margin-top: 20px;
+}
+.about .rank-wrapper{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .rank-wrapper .rank-card{
+    text-align: center;
+    background: #fff;
+    color: #000;
+    padding: auto;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(223, 236, 32, 0.2) 0px 8px 24px;box-shadow: rgb(216, 3, 184,0.7) 0px 3px 8px;
+}
+.about .rank-wrapper .rank-card h1{
+    font-size: 60px;
+}
+.about .rank-wrapper .rank-card p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.swiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-next::after ,.swiper-button-prev::after{
+    color: #000;
+    --swiper-navigation-size:30px;
+}
+.swiper-pagination-bullet{
+    --swiper-theme-color:#000000
+}
+.base{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qu-wrapper{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qu-wrapper2{
+    display: flex;
+    width: 750px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.quote-card{
+    width: 650px;
+    height: 200px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.quote-card img{
+    aspect-ratio: 1/1;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    filter: grayscale(80%);
+}
+.quote-card .quote{
+    display: grid;
+    position: relative;
+    color: #969696;
+}
+.quote-card .quote .qu-content{
+    text-align: center;
+}
+.quote-card .quote h4{
+    text-align: end;
+    margin-top: 10px;
+}
+.event-sec{
+    height: 100vh;
+    background-color: #801414;
+}
+.layer{
+    background-image: url(images/stacked-waves-haikei.svg);
+}
+.wave-2{
+    aspect-ratio: 100/30;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+    *{
+        overflow-x: hidden;
+    }
+    .navbar{
+        display: block;
+        width: 100vw;
+        padding: 20px;
+        margin-bottom:20px;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo img{
+        width: 150px;
+        height: 35px;
+        position: relative;
+    }
+    .navbar ul {
+        display: grid;
+        list-style: none;
+        display: none;
+    }
+    .navbar .show{
+        display: block;
+    }
+    .menu-btn{
+        display: block;
+        border: none;
+        padding: 5px;
+    }
+    .wrapper{
+        display: block;
+        width: 100vw;
+    }
+    .heading h1{
+        font-size: 25px;
+    }
+    .sub-heading{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .sub-heading::before{
+        width: 30px;
+    }
+    .col-2 img{
+        width: 300px;
+        height: 200px;
+    }
+    .col-3{
+        flex-basis: 0;
+        min-width: 100%;
+    }
+    .col-3 .card{
+        height: 315px;
+    }
+    .material-symbols-outlined.md-48{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .qu-wrapper{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+
+}
